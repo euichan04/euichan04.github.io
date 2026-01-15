@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>글로벌 케미컬 트레이딩</title>
+  <style>
+    :root {
+      --primary: #0b3c5d;
+      --secondary: #1f6f8b;
+      --bg: #f5f7fa;
+      --text: #222;
+      --muted: #666;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 22px;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+    }
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--secondary); }
+
+    .hero {
+      background: linear-gradient(rgba(11,60,93,0.75), rgba(11,60,93,0.75)),
+        url('https://images.unsplash.com/photo-1581092160562-40aa08e78837');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 140px 24px;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      max-width: 760px;
+      font-size: 19px;
+      opacity: 0.95;
+    }
+
+    section { padding: 90px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+    .section-desc {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 46px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    }
+    .card h3 { margin-top: 0; color: var(--primary); }
+    .card p { color: var(--muted); }
+
+    .products li {
+      list-style: none;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .products a { text-decoration: none; color: var(--text); }
+    .products a:hover { color: var(--secondary); }
+
+    .contact {
+      background: #fff;
+      border-radius: 18px;
+      padding: 44px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      max-width: 640px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      font-size: 14px;
+    }
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover { background: var(--secondary); }
+
+    footer {
+      background: #0b3c5d;
+      color: #e5e7eb;
+      padding: 50px 24px;
+    }
+    footer .container { font-size: 14px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Global Chemical Trading</div>
+    <nav>
+      <a href="#about">회사소개</a>
+      <a href="#services">서비스</a>
+      <a href="#products">제품</a>
+      <a href="#contact">문의</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Global Chemical Trading Partner</h1>
+    <p>
+      Reliable sourcing and supply of industrial and specialty chemicals
+      with consistent quality and flexible global logistics.
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">회사 소개</h2>
+    <p class="section-desc">
+      Global Chemical Trading은 화학 원료 유통 분야에서 축적된 경험과
+      글로벌 네트워크를 기반으로 고객 맞춤형 공급 솔루션을 제공합니다.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">주요 서비스</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>글로벌 소싱</h3>
+        <p>검증된 해외 제조사로부터 안정적인 화학 원료 공급</p>
+      </div>
+      <div class="card">
+        <h3>품질 관리</h3>
+        <p>국제 기준에 부합하는 품질 및 규격 관리</p>
+      </div>
+      <div class="card">
+        <h3>물류 & 배송</h3>
+        <p>고객 일정에 맞춘 유연한 물류 솔루션 제공</p>
+      </div>
+      <div class="card">
+        <h3>맞춤 대응</h3>
+        <p>산업별·용도별 맞춤 제품 제안</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <h2 class="section-title">제품 카테고리</h2>
+    <div class="grid">
+      <div class="card products">
+        <h3>Alcohols & Solvents</h3>
+        <ul>
+          <li>Ethanol</li>
+          <li>Methanol</li>
+          <li>Isopropyl Alcohol</li>
+        </ul>
+      </div>
+      <div class="card products">
+        <h3>Organic Chemicals</h3>
+        <ul>
+          <li><a href="#ethyl-acetate"><strong>Ethyl Acetate (ETAC)</strong></a></li>
+          <li>Acetic Acid</li>
+          <li>Glycols</li>
+        </ul>
+      </div>
+      <div class="card products">
+        <h3>Inorganic Chemicals</h3>
+        <ul>
+          <li>Sodium Hydroxide</li>
+          <li>Calcium Carbonate</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ethyl-acetate">
+  <div class="container">
+    <h2 class="section-title">Ethyl Acetate (ETAC)</h2>
+    <p class="section-desc">
+      Ethyl Acetate is a widely used organic solvent across multiple industries.
+      Our product is sourced from reliable global manufacturers and supplied
+      with strict quality control standards.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581093588401-12c9d4f6c4a8" style="width:100%;border-radius:10px;margin-bottom:14px" />
+        <h3>Product Overview</h3>
+        <p>
+          <strong>Chemical Formula:</strong> C4H8O2<br>
+          <strong>CAS No.:</strong> 141-78-6<br>
+          <strong>HS Code:</strong> 29153100
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" style="width:100%;border-radius:10px;margin-bottom:14px" />
+        <h3>Applications</h3>
+        <p>
+          • Paints & Coatings<br>
+          • Adhesives<br>
+          • Printing Inks<br>
+          • Pharmaceuticals & Cosmetics
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" style="width:100%;border-radius:10px;margin-bottom:14px" />
+        <h3>Packing & Supply</h3>
+        <p>
+          Drum Packing (180kg)<br>
+          IBC Tank (1000kg)<br>
+          ISO Tank / Bulk
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092334497-bc4b1b1c3c2a" style="width:100%;border-radius:10px;margin-bottom:14px" />
+        <h3>Why Choose Us</h3>
+        <p>
+          • Stable global sourcing<br>
+          • Consistent quality control<br>
+          • Flexible logistics & fast response
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">문의하기</h2>
+    <div class="contact">
+      <input type="text" placeholder="회사명" />
+      <input type="email" placeholder="이메일" />
+      <textarea rows="5" placeholder="문의 내용을 입력해 주세요"></textarea>
+      <button>문의 보내기</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Global Chemical Trading Co.</p>
+    <p>Email: info@globalchemicaltrading.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
